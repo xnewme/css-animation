@@ -1,0 +1,38 @@
+* {
+    margin:0;
+}
+.fonas {
+    position: relative;
+    margin-top:10%;
+    height: 100vh;
+    background-image: url('img/layer0.png');
+    background-size: cover;
+    animation: fonas 10s infinite;
+}
+.saule {
+    background-image: url('img/layer1.png');
+    background-repeat: repeat-x;
+    background-position: 0;
+    background-size: cover;
+    position: fixed;
+    height: 24%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+     animation: slideup 10s infinite;
+     animation-timing-function: linear;
+}
+@keyframes slideup {
+    0% { background-position: 0 0; }
+    50% { background-position: 100px 0; }
+    100% { background-position: 180px 0; }
+  }
+  @keyframes fonas {
+    0% { opacity:1;}
+    50% { opacity:0.7;}
+    75% { opacity:0.5;}
+    85% { opacity: 0.3; }
+    95% {opacity: 0.1; }
+    100% { opacity: 0;}
+  }
